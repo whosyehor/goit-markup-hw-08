@@ -40,12 +40,76 @@
                     +38 096 111 11 11
                 </a>
         </ul>
+        <button class="mobile-btn-menu" data-menu-open>
+            <svg class="mobile-menu___icon-open" width="24" height="16">
+                <use href="./images/icons.svg#icon-mob-menu"></use>
+            </svg>
+        </button>
+        </div>
+        <!----------- Мобільне меню ------------>
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="container mobile-menu__container">
+                <div class="mobile-menu__top">
+                    <button class="mobile-btn-close" data-menu-close>
+                        <svg class="mobile-menu__icon-close" width="19" height="19">
+                            <use href="./images/icons.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-nav list">
+                        <li class="mobile-nav__item">
+                            <a href="./index.html" class="mobile-nav__link link mobile-nav__link--current">Студія</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#" class="mobile-nav__link link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__bottom">
+                    <ul class="mobile-contacts list">
+                        <li class="mobile-contacts__item">
+                            <a href="tel:+380961111111" class="mobile-contacts__link link mobile-contacts__tel"
+                                >+38 096 111 11 11</a
+                            >
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="mobile-contacts__link link mobile-contacts__mail"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="mobile-soc list">
+                        <li class="mobile-soc__item">
+                            <a class="mobile-soc__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mobile-soc__item">
+                            <a class="mobile-soc__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mobile-soc__item">
+                            <a class="mobile-soc__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mobile-soc__item">
+                            <a class="mobile-soc__link link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="hero__container container">
             <h1 class="hero__title">Ефективні рішення для <br />вашого бізнесу</h1>
             <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
@@ -111,7 +175,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section section-activity">
         <div class="container">
         <h3 class="section-title activity">Чим ми займаємося</h3>
         <ul class="options">
@@ -145,7 +209,26 @@
         <h3 class="section-title tm">Наша команда</h3>
         <ul class="team">
             <li class="border">
-                <img class="pics" src="./images/productdesigner.jpg" alt="хлопець в окулярах" width="270">
+                <picture>
+                    <source
+                        srcset="./images/team/igor-desk.jpg 1x, ./images/team/igor-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/team/igor-tab.jpg 1x, ./images/team/igor-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/team/igor-mob.jpg 1x, ./images/team/igor-mob-2x.jpg 2x"
+                        media="(max-width: 767px)"
+                    />
+                    <img
+                        src="./images/team/igor-mob-2x.jpg"
+                        alt="чоловік в сорочці шоколадного кольору"
+                        width="450"
+                        height="460"
+                    />
+                </picture>
                 <div class="team-div">
                 <h3 class="title-section">Ігор Дем'яненко</h3>
                 <p class="description">Product Designer</p>
@@ -181,7 +264,21 @@
                 </ul>
                 </div>
             <li class="border">
-                <img class="pics" src="./images/frontend.jpg" alt="дівчина в окулярах" width="270">
+                <picture>
+                    <source
+                        srcset="./images/team/olga-desk.jpg 1x, ./images/team/olga-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/team/olga-tab.jpg 1x, ./images/team/olga-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/team/olga-mob.jpg 1x, ./images/team/olga-mob-2x.jpg 2x"
+                        media="(max-width: 767px)"
+                    />
+                    <img src="./images/team/olga-mob-2x.jpg" alt="жінка блондинка усміхається" width="450" height="460" />
+                </picture>
                 <div class="team-div">
                 <h3 class="title-section">Ольга Рєпіна</h3>
                 <p class="description">Frontend developer</p>
@@ -218,7 +315,21 @@
                 </div>
             </li>
             <li class="border">
-                <img class="pics" src="./images/marketing.jpg" alt="хлопець в сорочці" width="270">
+                <picture>
+                    <source
+                        srcset="./images/team/mykola-desk.jpg 1x, ./images/team/mykola-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/team/mykola-tab.jpg 1x, ./images/team/mykola-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/team/mykola-mob.jpg 1x, ./images/team/mykola-mob-2x.jpg 2x"
+                        media="(max-width: 767px)"
+                    />
+                    <img src="./images/team/mykola-mob-2x.jpg" alt="хлопець в блакитній сорочці" width="450" height="460" />
+                </picture>
                 <div class="team-div">
                 <h3 class="title-section">Микола Тарасов</h3>
                 <p class="description">Marketing</p>
@@ -255,7 +366,21 @@
                 </div>
             </li>
             <li class="border">
-                <img class="pics" src="./images/uidesigner.jpg" alt="хлопець в чорній футболці" width="270">
+                <picture>
+                    <source
+                        srcset="./images/team/mykhailo-desk.jpg 1x, ./images/team/mykhailo-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/team/mykhailo-tab.jpg 1x, ./images/team/mykhailo-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/team/mykhailo-mob.jpg 1x, ./images/team/mykhailo-mob-2x.jpg 2x"
+                        media="(max-width: 767px)"
+                    />
+                    <img src="./images/team/mykhailo-mob-2x.jpg" alt="чоловік в чорній футболці" width="450" height="460" />
+                </picture>
                 <div class="team-div">
                 <h3 class="title-section">Михайло Єрмаков</h3>
                 <p class="description">UI Designer</p>
@@ -474,5 +599,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

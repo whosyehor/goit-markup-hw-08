@@ -1,4 +1,11 @@
 /*----------------------------- Section pic ---------------------- */
+.section-activity{
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}
 .section-title .activity{
     margin-top: 0;
     margin-bottom: 0;

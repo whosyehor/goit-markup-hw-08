@@ -3,10 +3,22 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .company__icon{
+    max-width: 210px;
     width: 170px;
     height: 92px;
+    flex-basis: calc((100% - 30px) / 2);
+
+	@include tablet {
+		flex-basis: calc((100% - 60px) / 3);
+    }
+
+	@include desktop {
+		flex-wrap: nowrap;
+		flex-basis: calc((100% - 150px) / 6);
+	}
 }
 .company__link{
     width: 100%;

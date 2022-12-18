@@ -7,12 +7,18 @@
 }
 .footer__container{
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+    @include desktop {
     width: 1200px;
+    align-items: baseline;
+    flex-wrap: nowrap;
     gap: 10px;
+    }
 }
 .footer__logo{
     display: block;
@@ -22,7 +28,11 @@
     color: #FFFFFF;
 }
 .footer__item{
-    margin-bottom: 9px;
+    margin-bottom: 12px;
+
+    @include desktop {
+        margin-bottom: 9px;
+    }
 }
 .footer__address{
     color: #FFFFFF;

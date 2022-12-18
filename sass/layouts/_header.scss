@@ -7,18 +7,35 @@
     color:#2196F3;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1923;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    }
+
+    @include desktop {
+    font-size: 26px;
+    line-height: 1.1923;
     padding-top: 25px;
     padding-bottom: 25px;
+    }
 }
 .header__span{
     color:#000000;
 }
 .header__navigation{
     margin-left: 93px;
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
 }
 .menu{
     display: flex;
@@ -55,6 +72,10 @@
     height: 4px;
     background-color: #2196F3;
     border-radius: 2px;
+
+    @include tablet {
+        bottom: -1px;
+    }
     }
 }
 .menu__link{
@@ -78,8 +99,15 @@
 /* ----------------------------- Auth-nav ------------------------ */
 .contacts{
     margin: 0;
-    display: flex;
     margin-left: auto;
+    display: none;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 .contacts .item + .item{
     margin-left: 50px;
@@ -87,8 +115,6 @@
 .contacts__mail{
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color:#757575;
     text-decoration: none;
     font-weight: 500;
@@ -99,6 +125,11 @@
     &:hover,
     &:focus{
     color: #2196F3;
+    }
+
+    @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
     }
 }
 .contacts__icon--mail{
@@ -111,9 +142,6 @@
 .contacts__phone{
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: 30px;
     font-weight: 500;
     text-decoration: none;
     font-size: 14px;
@@ -125,6 +153,15 @@
     &:focus{
     color: #2196F3;
     }
+    @include tablet {
+        margin-right: 8px;
+    }
+
+    @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 30px;
+    }
 }
 .contacts__icon--phone{
     align-items: center;
@@ -132,5 +169,13 @@
     fill: currentColor;
     &:hover{
     color: #2196F3;
+    }
+
+    @include tablet {
+        margin-right: 8px;
+    }
+
+    @include desktop {
+        margin-right: 10px;
     }
 }
