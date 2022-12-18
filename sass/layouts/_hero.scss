@@ -23,25 +23,25 @@
 	padding: 118px 0;
 	margin: 0 auto;
 	background-color: var(--hero-bg-color);
-	background-image: var(--grad-img), url(../../images/Hero/hero-bg-mob.jpg);
+	background-image: var(--grad-img), url(../images/Hero/hero-bg-mob.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	@include retina {
-    background-image: var(--grad-img), url(../../images/Hero/hero-bg-mob-2x.jpg);
+    background-image: var(--grad-img), url(../images/Hero/hero-bg-mob-2x.jpg);
     }
 
 	@include mobile {
-		background-image: var(--grad-img), url(../../images/Hero/hero-bg-tab.jpg);
+		background-image: var(--grad-img), url(../images/Hero/hero-bg-tab.jpg);
 		@include retina {
-        background-image: var(--grad-img), url(../../images/Hero/hero-bg-tab-2x.jpg);
+        background-image: var(--grad-img), url(../images/Hero/hero-bg-tab-2x.jpg);
         }
 	}
 
 	@include tablet {
-		background-image: var(--grad-img), url(../../images/Hero/hero-bg-desk.jpg);
+		background-image: var(--grad-img), url(../images/Hero/hero-bg-desk.jpg);
 		@include retina {
-        background-image: var(--grad-img), url(../../images/Hero/hero-bg-desk-2x.jpg);
+        background-image: var(--grad-img), url(../images/Hero/hero-bg-desk-2x.jpg);
         }
 	}
 
