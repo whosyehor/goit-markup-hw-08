@@ -103,10 +103,14 @@
     display: none;
 
     @include tablet {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    }
+    @include desktop {
+    display: flex;
+    flex-direction: row;
     }
 }
 .contacts .item + .item{
