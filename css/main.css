@@ -368,6 +368,7 @@ body {
   margin-bottom: 30px;
   color: #FFFFFF;
   font-size: 26px;
+  font-weight: 900;
   line-height: 1.6153;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -742,7 +743,6 @@ body {
 }
 
 .company__icon {
-  max-width: 210px;
   width: 170px;
   height: 92px;
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -823,9 +823,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1225,7 +1224,10 @@ body {
   transition: -webkit-transform 500ms linear;
   transition: transform 500ms linear;
   transition: transform 500ms linear, -webkit-transform 500ms linear;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 @media screen and (min-width: 480px) {
   .modal {
