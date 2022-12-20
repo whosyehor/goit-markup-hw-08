@@ -17,6 +17,10 @@
     gap: 30px;
     flex-wrap: wrap;
 
+    @include tablet {
+        flex-wrap: wrap;
+    }
+
     @include desktop {
         flex-wrap: nowrap;
     }
